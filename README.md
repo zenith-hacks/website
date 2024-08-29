@@ -7,3 +7,6 @@ Note! Even if you're a member of Web Team, you'll still require an approval from
 
 ## Help!?!?
 Done something wrong, or need help!? DM @LKMW on Slack, or send an email to leo@zenithhacks.org with `URGENT` in the subject line!
+
+## Analytics!
+Want to see analytics for the site? Check [here](https://go.zenithhacks.org/analytics)! if it's not working, email leo@zenithhacks.org. Thanks :)
