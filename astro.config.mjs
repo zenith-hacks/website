@@ -7,12 +7,12 @@ import { autoNewTabExternalLinks } from './src/autoNewTabExternalLinks';
 import partytown from "@astrojs/partytown";
 
 export default defineConfig({
-  site: 'http://localhost:4321',
+  site: 'https://zenithhacks.org',
   integrations: [mdx(), sitemap(), tailwind(), partytown()],
   markdown: {
     extendDefaultPlugins: true,
     rehypePlugins: [[autoNewTabExternalLinks, {
-      domain: 'localhost:4321'
+      domain: 'zenithhacks.org'
     }]]
   }
 });
