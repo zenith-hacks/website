@@ -4,7 +4,23 @@ import { Image } from 'astro:assets';
 import Logo from '@src/assets/img/icon.png';
 
 const menu = [
-  {
+	{
+		link: 'https://hcb.hackclub.com/zenithhacks',
+		label: 'HCB'
+	},
+	{
+		link: 'https://github.com/zenith-hacks',
+		label: 'GitHub'
+	},
+	{
+		link: 'https://hackclub.slack.com/archives/C07HC6711PX',
+		label: 'Slack'
+	},
+];
+---
+
+<!--
+	{
 		link: '/faq/',
 		label: 'FAQ'
 	},
@@ -12,16 +28,7 @@ const menu = [
 		link: '/team/',
 		label: 'Team'
 	},
-	{
-		link: 'https://hcb.hackclub.com/zenithhacks',
-		label: 'HCB'
-	},
-	{
-		link: 'https://github.com/zenith-hacks',
-		label: 'Github'
-	},
-];
----
+-->
 
 <style>
   @keyframes subtle-glow {
