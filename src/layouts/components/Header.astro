@@ -6,16 +6,24 @@ import { Image } from 'astro:assets';
 const menu = [
 	{
 		link: 'https://hcb.hackclub.com/zenithhacks',
-		label: 'HCB'
+		label: 'HCB',
+		target: '_blank'
 	},
 	{
 		link: 'https://github.com/zenith-hacks',
-		label: 'GitHub'
+		label: 'GitHub',
+		target: '_blank'
 	},
 	{
 		link: 'https://hackclub.slack.com/archives/C07HC6711PX',
-		label: 'Slack'
+		label: 'Slack',
+		target: '_blank'
 	},
+	{
+		link: '/code-of-conduct',
+		label: "Code of Conduct",
+		target: '_blank'
+	}
 ];
 ---
 
@@ -49,7 +57,7 @@ const menu = [
 		<nav class='flex gap-4 items-center justify-between py-3'>
 			<h2 class='m-0'>
 				<a href='/' class='flex gap-4 items-center text-xl font-black uppercase'>
-          		<Image src={Logo} alt='Zenith 2025' class="w-11 shadow-lg"/> 
+          		<Image src={Logo} alt='Zenith 2025' class="w-11 shadow-lg" loading="eager"/> 
 				</a>
 			</h2>
 			<div class='flex'>
@@ -68,7 +76,7 @@ const menu = [
         {
           menu.map((item) => (
             <div class='px-2.5 text-sm'>
-              <HeaderLink class="py-3 flex items-center" href={item.link}>
+              <HeaderLink class="py-3 flex items-center" href={item.link} {...item}>
                 {item.label}
               </HeaderLink>
             </div>
