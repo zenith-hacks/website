@@ -9,8 +9,47 @@ import { Image } from "astro:assets";
          <div class='my-[12vh] mx-10'>
             <h1 class="text-6xl font-['Roboto'] font-extrabold italic">Zenith 2025</h1>
             <p class="font-['Poppins'] max-w-[700px] inline-block text-xl">
-               Join a hackathon to compete and connect with Hack Club leaders from across the world!
+               Join Zenith to compete and connect with Hack Club leaders from across the world!
             </p>
+            <form id="email-form" class="mt-4 mx-auto px-4 flex flex-col justify-center max-w-lg h-min gap-4">
+              <label for="email" class="block text-center max-w-[700px] mx-auto text-xl leading-7">
+                Get notified when we open sign ups:
+              </label>
+              <div class="flex flex-row gap-4">
+                <input type="email" id="email" class="h-14 w-0 flex-grow bg-white text-black rounded-md read-only:bg-gray-300 px-4" required />
+                <button type="submit" data-submitted="false" id="submit" class="h-14 w-14 bg-white text-black rounded-md flex-shrink-0 data-[submitted=true]:bg-green-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="m-auto" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+                    <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+                  </svg>
+                </button>
+              </div>
+              <p class="w-[100%]">We'll send you exactly one email when sign-ups open and then burn the mailing list. <a href="#privacy" class="text-gray-300">Privacy</a></p>
+            </form>
+            <script>
+              const form = document.getElementById("email-form")
+              const email = document.getElementById("email")
+              const submit = document.getElementById("submit")
+              let hasSubmitted = false
+              
+              form.onsubmit = async (e) => {
+                e.preventDefault()
+                submit.readOnly = true
+                email.readOnly = true
+                
+                if (hasSubmitted) {
+                  return
+                }
+                
+                hasSubmitted = true
+                
+                await fetch("https://yellow-queen-ccd3.sarah-ec5.workers.dev/", {
+                  method: "POST",
+                  body: email.value
+                })
+                
+                submit.dataset.submitted = true
+              }
+            </script>
          </div>
          <div
             class='inline-block h-[220vw] lg:h-[160vw] w-[160vw] bg-white rounded-full m-auto absolute left-[calc(50vw-80vw)]'
@@ -118,6 +157,14 @@ import { Image } from "astro:assets";
             <h2 class='text-2xl py-2'>✨ Individual Sponsors ✨</h2>
             <p>John Tan-Aristy</p>
          </div>
+      </div>
+      
+      <hr />
+      
+      <!-- TODO: This really should be in the footer. -->
+      <div id="privacy" class="mx-12 mt-12 text-neutral-700 text-sm">
+        By submitting your email, you consent to us collecting your email, IP address and approximate location based on your IP address to prevent spam and send you one email when Zenith sign ups open.
+        After we send you that one email, we'll delete all data collected.
       </div>
    </div>
 </BaseLayout>

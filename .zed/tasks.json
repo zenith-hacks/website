@@ -1,0 +1,7 @@
+[
+  {
+    "label": "Run development server",
+    "command": "npm run dev",
+    "shell": "system"
+  }
+]
