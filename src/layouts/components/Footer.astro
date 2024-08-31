@@ -2,29 +2,27 @@
 const today = new Date();
 ---
 
-<footer class='container mt-8 border-t-2'>
+<footer>
+	<div class='grid grid-cols-2 container mt-8 border-t-2'>
+		<div class='flex items-center justify-center'>
+			<h1 class="text-4xl font-['Roboto'] italic">Zenith 2025</h1>
+		</div>
+		<div class='text-neutral-700 mt-6'>
+			<p>HCB: <a class='hover:underline' href='https://hcb.hackclub.com/zenithhacks'>Zenith Hacks</a></p>
+			<p>GitHub: <a class='hover:underline' href='https://github.com/zenith-hacks'>@zenith-hacks</a></p>
+			<p>Slack: <a class='hover:underline' href='https://hackclub.slack.com/archives/C07HC6711PX'>#hack-zenith-2025</a></p>
+			<p>Email: <a class='hover:underline' href='mailto:team@zenithhacks.org'>team@zenithhacks.org</a></p>
+         <br />
+			<p><a class='hover:underline' href='https://withcabin.com/privacy/zenithhacks.org'>Privacy Policy</a></p>
+			<div class='text-sm text-zinc-500'>
+				<div>Copyright © {today.getFullYear()} Zenith.</div>
+			</div>
+		</div>
+	</div>
 	<div class='justify-center flex gap-4 py-8 prose text-sm text-center'>
 		<p class='max-w-[700px] underline'>
 			Zenith 2025 is fiscally sponsored by The Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN: 81-2908499). Contributions
 			are tax-deductible to the fullest extent allowed by law.
 		</p>
-	</div>
-   <div class="text-center text-neutral-700">
-      <a class="hover:underline" href="https://hcb.hackclub.com/zenithhacks">HCB</a>
-      |
-      <a class="hover:underline" href="https://github.com/zenith-hacks">GitHub</a>
-      |
-      <a class="hover:underline" href="https://hackclub.slack.com/archives/C07HC6711PX">Slack</a>
-   </div>
-   <br>
-	<div class='py-4 border-t-2'>
-		<div class='md:flex text-sm text-zinc-500 max-lg:text-center prose justify-between'>
-			<div>Copyright © {today.getFullYear()} Zenith.</div>
-			<div>
-				<a href='mailto:team@zenithhacks.org'>team@zenithhacks.org</a> | <a href='https://withcabin.com/privacy/zenithhacks.org'
-					>Privacy Policy</a
-				>
-         </div>
-		</div>
 	</div>
 </footer>
