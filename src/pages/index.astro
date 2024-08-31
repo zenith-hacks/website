@@ -1,126 +1,123 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { Image } from 'astro:assets';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
 ---
 
 <BaseLayout title='Zenith 2025'>
-	<div class="font-['Poppins']">
-		<div class='bg-black h-[160vh] lg:h-[180vh] text-white overflow-hidden text-center relative'>
-			<div class='my-[12vh]'>
-				<h1 class="text-6xl font-['Roboto'] font-extrabold italic">Zenith 2025</h1>
-				<p class="font-['Poppins'] max-w-[700px] inline-block text-xl">
-					Join a hackathon to compete and connect with Hack Club leaders from across the world!
-				</p>
-			</div>
-			<div
-				class='inline-block h-[220vw] lg:h-[160vw] w-[160vw] bg-white rounded-full m-auto absolute left-[calc(50vw-80vw)]'
-				style='top: calc(100vh - 40vh); box-shadow: -1rem -1rem 4rem #fff, inset 0 0 8rem #333'
-			>
-				<div class='container mt-[10vh] px-28 lg:mt-[50vh] lg:mx-auto text-black'>
-					<h2 class="text-4xl font-['Roboto'] font-bold text-center mb-4">What is Zenith 2025?</h2>
-					<p class='text-center max-w-[700px] mx-auto text-xl leading-7'>
-						Zenith 2025 is a hackathon organised by and for teens. We're coming together for 2 days to share our knowledge and collaborate
-						with like minded individuals in a supportive environment where mistakes are welcomed. The event will be hosted in the tech
-						centre of the modern world - San Francisco. And with the help of our sponsors, we're going to make sure everyone, regardless of
-						their background, can attend!
-					</p>
-				</div>
-			</div>
-		</div>
+   <div class="font-['Poppins']">
+      <div class='bg-black h-[165vh] text-white overflow-hidden text-center relative'>
+         <div class='my-[12vh] mx-10'>
+            <h1 class="text-6xl font-['Roboto'] font-extrabold italic">Zenith 2025</h1>
+            <p class="font-['Poppins'] max-w-[700px] inline-block text-xl">
+               Join a hackathon to compete and connect with Hack Club leaders from across the world!
+            </p>
+         </div>
+         <div
+            class='inline-block h-[220vw] lg:h-[160vw] w-[160vw] bg-white rounded-full m-auto absolute left-[calc(50vw-80vw)]'
+            style='top: calc(100vh - 40vh); box-shadow: -1rem -1rem 4rem #fff, inset 0 0 8rem #333'
+         >
+            <div class='container mt-[35vh] mx-auto text-black w-[100vw] m-16'>
+               <h2 class="text-4xl font-['Roboto'] font-bold text-center mb-4">What is Zenith 2025?</h2>
+               <p class='text-center max-w-[700px] mx-auto text-xl leading-7'>
+                  Zenith 2025 is a hackathon organised by and for teens. We're coming together for 2 days to share our knowledge and
+                  collaborate with like minded individuals in a supportive environment where mistakes are welcomed. The event will be hosted
+                  in the tech centre of the modern world - San Francisco. And with the help of our sponsors, we're going to make sure
+                  everyone, regardless of their background, can attend!
+               </p>
+            </div>
+         </div>
+      </div>
 
-		<div id='about' class='bg-black text-white'>
-			<div class='grid grid-cols-1 md:grid-cols-2 min-h-[400px] p-6'>
-				<div class='flex items-center justify-center text-center p-6'>
-					<div>
-						<h2 class="text-3xl md:text-4xl font-['Roboto'] leading-7 my-2">Hackathon?</h2>
-						<p class='text-lg md:text-xl'>
-							A hackathon is a social coding marathon where teenagers come together to learn, build, and share their results with the world!
-						</p>
-					</div>
-				</div>
-				<div class='p-6'>
-					<Image
-						class='w-full h-auto rounded-lg'
-						src='https://miro.medium.com/v2/resize:fit:7940/1*i5VHWsPa9k-u9ffVz0CQdw.jpeg'
-						alt='Room full of teens'
-						inferSize={true}
-					/>
-				</div>
-			</div>
+      <div id='about' class='bg-black text-white'>
+         <div class='grid grid-cols-1 md:grid-cols-2 min-h-[400px] p-6'>
+            <div class='flex items-center justify-center text-center p-6'>
+               <div>
+                  <h2 class="text-3xl md:text-4xl font-['Roboto'] leading-7 my-2">Hackathon?</h2>
+                  <p class='text-lg md:text-xl'>
+                     A hackathon is a social coding marathon where teenagers come together to learn, build, and share their results with the
+                     world!
+                  </p>
+               </div>
+            </div>
+            <div class='p-6'>
+               <Image
+                  class='w-full h-auto rounded-lg'
+                  src='https://miro.medium.com/v2/resize:fit:7940/1*i5VHWsPa9k-u9ffVz0CQdw.jpeg'
+                  alt='Room full of teens'
+                  inferSize={true}
+               />
+            </div>
+         </div>
 
-			<div class='grid grid-cols-1 md:grid-cols-2 min-h-[400px] bg-white text-black p-6'>
-				<div class='flex items-center justify-center text-center p-6'>
-					<Image
-						class='rotate-12 w-full h-auto max-w-xs mx-auto'
-						src='https://seeklogo.com/images/G/globe-logo-273472C23A-seeklogo.com.png'
-						alt='Globe vector'
-						inferSize={true}
-					/>
-				</div>
-				<div class='flex items-center justify-center text-center p-6'>
-					<div>
-						<h2 class="text-3xl md:text-4xl font-['Roboto'] leading-7 my-2">Everyone?</h2>
-						<p class='text-lg md:text-xl'>
-							Too often communities that are less privileged or outside the USA don't get the same opportunities, so we're providing travel
-							stipends to all eligible teens after a vetting process to ensure that everyone, no matter their background or educational
-							status can access life-changing partnerships with other teens.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+         <div class='grid grid-cols-1 md:grid-cols-2 min-h-[400px] bg-white text-black p-6'>
+            <div class='flex items-center justify-center text-center p-6'>
+               <img class='rotate-12 w-full h-auto max-w-xs mx-auto' src='/images/globe.png' alt='Image of Earth' />
+            </div>
+            <div class='flex items-center justify-center text-center p-6'>
+               <div>
+                  <h2 class="text-3xl md:text-4xl font-['Roboto'] leading-7 my-2">Everyone?</h2>
+                  <p class='text-lg md:text-xl'>
+                     Too often communities that are less privileged or outside the USA don't get the same opportunities, so we're providing
+                     travel stipends to all eligible teens after a vetting process to ensure that everyone, no matter their background or
+                     educational status can access life-changing partnerships with other teens.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
 
-		<hr />
+      <hr />
 
-		<div id='sponsors' class='bg-white text-center py-16'>
-			<h1 class="text-3xl text-black font-['Poppins']">💖 Our sponsors, who will make this event possible 💖</h1>
-			<style>
-				.sponsor {
-					display: inline-block;
-					width: 400px;
-					margin: 2rem 3rem;
-				}
-				.sponsor.square {
-					height: 100px;
-					width: 100px;
-				}
+      <div id='sponsors' class='bg-white text-center py-16'>
+         <h1 class="text-3xl text-black font-['Poppins'] mx-4">Our sponsors, who will make this event possible</h1>
+         <h1 class="text-3xl my-4 mb-8 text-black font-['Poppins']">💖💖💖</h1>
+         <style>
+            .sponsor {
+               display: inline-block;
+               width: 400px;
+               margin: 2rem 3rem;
+            }
+            .sponsor.square {
+               height: 100px;
+               width: 100px;
+            }
 
-				@media (max-width: 768px) {
-					.sponsor {
-						display: block;
-						width: 100%;
-						height: auto;
-						max-width: 200px;
-						margin: 1rem auto;
-					}
-					.sponsor.square {
-						height: auto;
-						width: 80px;
-					}
-				}
-			</style>
-			<Image class='sponsor' src='/logos/disney-on-light.svg' alt='Disney logo' width={400} height={200} />
-			<Image class='sponsor' src='/logos/redbull.svg' alt='Redbull logo' width={400} height={200} />
-			<Image class='sponsor' src='/logos/desmos-on-light.png' alt='Desmos non-profit logo' width={400} height={200} />
-			<Image
-				class='sponsor bg-[#222] rounded-xl'
-				src='/logos/codeforcause.png'
-				alt='Code for Cause logo and text'
-				width={400}
-				height={200}
-			/>
-			<Image class='sponsor' src='/logos/1password-blue.svg' alt='1Password logo' width={400} height={200} />
-			<Image class='sponsor' src='/logos/axure.svg' alt='Axure logo' width={400} height={200} />
-			<Image class='sponsor' src='/logos/codecrafters.png' title='Code Crafters' alt='Code Crafters logo' width={400} height={200} />
-			<br />
-			<br />
-			<hr />
-			<br />
-			<br />
-			<div>
-				<h2 class='text-2xl py-2'>✨ Individual Sponsors ✨</h2>
-				<p>John Tan-Aristy</p>
-			</div>
-		</div>
-	</div>
+            @media (max-width: 768px) {
+               .sponsor {
+                  display: block;
+                  width: 100%;
+                  height: auto;
+                  max-width: calc(100vw - 10rem);
+                  margin: 3rem 5rem;
+               }
+               .sponsor.square {
+                  height: auto;
+                  width: 80px;
+               }
+            }
+         </style>
+         <Image class='sponsor' src='/logos/disney-on-light.svg' alt='Disney logo' width={400} height={200} />
+         <Image class='sponsor' src='/logos/redbull.svg' alt='Redbull logo' width={400} height={200} />
+         <Image class='sponsor' src='/logos/desmos-on-light.png' alt='Desmos non-profit logo' width={400} height={200} />
+         <Image
+            class='sponsor bg-[#222] rounded-xl'
+            src='/logos/codeforcause.png'
+            alt='Code for Cause logo and text'
+            width={400}
+            height={200}
+         />
+         <Image class='sponsor' src='/logos/1password-blue.svg' alt='1Password logo' width={400} height={200} />
+         <Image class='sponsor' src='/logos/axure.svg' alt='Axure logo' width={400} height={200} />
+         <Image class='sponsor' src='/logos/codecrafters.png' title='Code Crafters' alt='Code Crafters logo' width={400} height={200} />
+         <br />
+         <br />
+         <hr />
+         <br />
+         <br />
+         <div>
+            <h2 class='text-2xl py-2'>✨ Individual Sponsors ✨</h2>
+            <p>John Tan-Aristy</p>
+         </div>
+      </div>
+   </div>
 </BaseLayout>
