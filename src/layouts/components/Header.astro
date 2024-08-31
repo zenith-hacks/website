@@ -5,17 +5,13 @@ import { Image } from 'astro:assets';
 
 const menu = [
 	{
-		link: 'https://hcb.hackclub.com/zenithhacks',
-		label: 'HCB'
+		link: '#about',
+		label: 'About'
 	},
 	{
-		link: 'https://github.com/zenith-hacks',
-		label: 'GitHub'
-	},
-	{
-		link: 'https://hackclub.slack.com/archives/C07HC6711PX',
-		label: 'Slack'
-	},
+		link: '#sponsors',
+		label: 'Sponsors'
+	}
 ];
 ---
 
@@ -29,52 +25,79 @@ const menu = [
 		label: 'Team'
 	},
 -->
-
 <style>
-  @keyframes subtle-glow {
-    0%, 100% {
-      box-shadow: 0 0 5px 1px rgba(128, 0, 128, 0.3), 0 0 10px 2px rgba(255, 140, 0, 0.3), 0 0 15px 3px rgba(128, 0, 128, 0.2);
-    }
-    50% {
-      box-shadow: 0 0 8px 2px rgba(128, 0, 128, 0.5), 0 0 12px 4px rgba(255, 140, 0, 0.5), 0 0 18px 6px rgba(128, 0, 128, 0.3);
-    }
-  }
+	@keyframes subtle-glow {
+		0%,
+		100% {
+			box-shadow:
+				0 0 5px 1px rgba(128, 0, 128, 0.3),
+				0 0 10px 2px rgba(255, 140, 0, 0.3),
+				0 0 15px 3px rgba(128, 0, 128, 0.2);
+		}
+		50% {
+			box-shadow:
+				0 0 8px 2px rgba(128, 0, 128, 0.5),
+				0 0 12px 4px rgba(255, 140, 0, 0.5),
+				0 0 18px 6px rgba(128, 0, 128, 0.3);
+		}
+	}
+	html {
+		scroll-behavior: smooth;
+	}
 </style>
 
 <header
 	id='site-header'
-	class="flex bg-black pt-16 sm:pt-0 items-center w-full transition duration-300 z-[999] border-[var(--soft-border-color)]"
+	class='flex bg-black pt-16 sm:pt-0 items-center w-full transition duration-300 z-[999] border-[var(--soft-border-color)]'
 >
 	<div class='container'>
 		<nav class='flex gap-4 items-center justify-between py-3'>
 			<h2 class='m-0'>
 				<a href='/' class='flex gap-4 items-center text-xl font-black uppercase'>
-          		<Image src={Logo} alt='Zenith 2025' class="w-11 shadow-lg"/> 
+					<Image src={Logo} alt='Zenith 2025' class='w-11 shadow-lg' />
 				</a>
 			</h2>
 			<div class='flex'>
-				<a class='bg-transparent text-white px-6 py-2 pt-[.7rem] rounded-full font-bold uppercase border border-zinc-700 animate-[subtle-glow_2s_infinite_alternate] hover:scale-105 transition-transform duration-300' href='https://hcb.hackclub.com/donations/start/zenithhacks' target='_blank'>
+				<a
+					class='bg-transparent text-white px-6 py-2 pt-[.7rem] rounded-full font-bold uppercase border border-zinc-700 animate-[subtle-glow_2s_infinite_alternate] hover:scale-105 transition-transform duration-300'
+					href='https://hcb.hackclub.com/donations/start/zenithhacks'
+					target='_blank'
+				>
 					Donate
 				</a>
 			</div>
 		</nav>
-    <div class='fixed top-3 w-auto max-w-full px-3 left-1/2 -translate-x-1/2 z-[999]'>
-      <div class="flex px-2.5 bg-black backdrop-blur-md leading-tight rounded-full border border-zinc-700">
-        <div class="px-2.5 text-sm">
-          <HeaderLink class="py-3 flex items-center" href="/" aria-label="Home">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-          </HeaderLink>
-        </div>
-        {
-          menu.map((item) => (
-            <div class='px-2.5 text-sm'>
-              <HeaderLink class="py-3 flex items-center" href={item.link}>
-                {item.label}
-              </HeaderLink>
-            </div>
-          ))
-        }
-      </div>
-    </div>
+		<div class='fixed top-3 w-auto max-w-full px-3 left-1/2 -translate-x-1/2 z-[999]'>
+			<div class='flex px-2.5 bg-black backdrop-blur-md leading-tight rounded-full border border-zinc-700'>
+				<div class='px-2.5 text-sm'>
+					<HeaderLink class='py-3 flex items-center' href='/' aria-label='Home'>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							width='20'
+							height='20'
+							viewBox='0 0 24 24'
+							fill='none'
+							stroke='currentColor'
+							stroke-width='1.7'
+							stroke-linecap='round'
+							stroke-linejoin='round'
+							class='lucide lucide-house'
+							><path d='M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8'></path><path
+								d='M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'
+							></path></svg
+						>
+					</HeaderLink>
+				</div>
+				{
+					menu.map((item) => (
+						<div class='px-2.5 text-sm'>
+							<HeaderLink class='py-3 flex items-center' href={item.link}>
+								{item.label}
+							</HeaderLink>
+						</div>
+					))
+				}
+			</div>
+		</div>
 	</div>
 </header>
