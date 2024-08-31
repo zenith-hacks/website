@@ -1,9 +1,9 @@
 module.exports = {
 	printWidth: 140,
-	tabWidth: 2,
-	useTabs: true,
+	tabWidth: 3,
+	useTabs: false,
 	semi: true,
-	singleQuote: true,
+	singleQuote: false,
 	quoteProps: 'as-needed',
 	jsxSingleQuote: true,
 	trailingComma: 'none',

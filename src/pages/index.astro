@@ -28,7 +28,7 @@ import { Image } from 'astro:assets';
 			</div>
 		</div>
 
-		<div class='bg-black text-white'>
+		<div id='about' class='bg-black text-white'>
 			<div class='grid grid-cols-1 md:grid-cols-2 min-h-[400px] p-6'>
 				<div class='flex items-center justify-center text-center p-6'>
 					<div>
@@ -72,7 +72,7 @@ import { Image } from 'astro:assets';
 
 		<hr />
 
-		<div class='bg-white text-center my-8'>
+		<div id='sponsors' class='bg-white text-center py-16'>
 			<h1 class="text-3xl text-black font-['Poppins']">💖 Our sponsors, who will make this event possible 💖</h1>
 			<style>
 				.sponsor {
@@ -117,8 +117,10 @@ import { Image } from 'astro:assets';
 			<hr />
 			<br />
 			<br />
-			<h2 class='text-2xl py-2'>✨ Individual Sponsors ✨</h2>
-         <p>John Tan-Aristy</p>
+			<div>
+				<h2 class='text-2xl py-2'>✨ Individual Sponsors ✨</h2>
+				<p>John Tan-Aristy</p>
+			</div>
 		</div>
 	</div>
 </BaseLayout>
