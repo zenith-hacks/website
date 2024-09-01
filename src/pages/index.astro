@@ -6,17 +6,27 @@ import { Image } from "astro:assets";
 <BaseLayout title='Zenith 2025'>
    <div class="font-['Poppins']">
       <div class='bg-black h-[165vh] text-white overflow-hidden text-center relative'>
-         <div class='my-[12vh] mx-10'>
+         <div class='my-[16vh] mx-10'>
             <h1 class="text-6xl font-['Roboto'] font-extrabold italic">Zenith 2025</h1>
             <p class="font-['Poppins'] max-w-[700px] inline-block text-xl">
-               Join a hackathon to compete and connect with Hack Club leaders from across the world!
+               Join a <span class='italic font-semibold'>community run</span> hackathon to compete and connect with Hack Club members from across
+               the world!
             </p>
+            <div class='my-10'>
+               <a
+                  class='bg-transparent text-white px-6 py-2 pt-[.7rem] rounded-full font-bold uppercase border border-zinc-700 animate-[subtle-glow_2s_infinite_alternate] hover:scale-105 transition-transform duration-300'
+                  href='https://hcb.hackclub.com/donations/start/zenithhacks'
+                  target='_blank'
+               >
+                  Donate
+               </a>
+            </div>
          </div>
          <div
             class='inline-block h-[220vw] lg:h-[160vw] w-[160vw] bg-white rounded-full m-auto absolute left-[calc(50vw-80vw)]'
             style='top: calc(100vh - 40vh); box-shadow: -1rem -1rem 4rem #fff, inset 0 0 8rem #333'
          >
-            <div class='container mt-[35vh] mx-auto text-black w-[100vw] m-16'>
+            <div class='container mt-[40vh] mx-auto text-black w-[100vw] m-16'>
                <h2 class="text-4xl font-['Roboto'] font-bold text-center mb-4">What is Zenith 2025?</h2>
                <p class='text-center max-w-[700px] mx-auto text-xl leading-7'>
                   Zenith 2025 is a hackathon organised by and for teens. We're coming together for 2 days to share our knowledge and
@@ -109,6 +119,7 @@ import { Image } from "astro:assets";
          <Image class='sponsor' src='/logos/1password-blue.svg' alt='1Password logo' width={400} height={200} />
          <Image class='sponsor' src='/logos/axure.svg' alt='Axure logo' width={400} height={200} />
          <Image class='sponsor' src='/logos/codecrafters.png' title='Code Crafters' alt='Code Crafters logo' width={400} height={200} />
+
          <br />
          <br />
          <hr />
